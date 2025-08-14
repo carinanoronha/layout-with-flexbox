@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefsans', sans-serif;
 }
 
 body {
@@ -135,10 +135,21 @@ input[type="radio"] {
     display: none;
 }
 
-#slide1:checked ~ .slides .s1 { margin-left: 0; }
-#slide2:checked ~ .slides .s2 { margin-left: -25%; }
-#slide3:checked ~ .slides .s3 { margin-left: -50%; }
-#slide4:checked ~ .slides .s4 { margin-left: -75%; }
+#slide1:checked ~ .slides .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .slides .s2 {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ .slides .s3 {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ .slides .s4 {
+    margin-left: -300%;
+}
 
 .navigation {
     position: absolute;
