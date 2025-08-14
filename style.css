@@ -1,285 +1,342 @@
 * {
-	padding: 0;
-	margin: 0;
-	font-family: 'Josefin Sans', sans-serif;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
-  
+
 body {
-	font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.1rem;
-	font-weight: 400;
-    line-height: 1.6;
-    background:  #202124;
+    background: #1c2526;
     color: #fff;
-    text-align: center;
-    justify-content: baseline;
-	height: 100vh;
-	width: 100vw;
+    line-height: 1.6;
+    font-size: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.content {
-	height: 338px;
-	width: 962px;
-	border-radius: 3px;
-	overflow: hidden;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+/* Header */
+.header {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.navigation {
-	position: absolute;
-	bottom: 4%;
-	left: 50%;
-	transform: translate(-50%);
-	display: flex;
-}
-
-.bar {
-	width: 70px;
-	height: 17px;
-	border: 2px solid #fff;
-	margin: 6px;
-	border-radius: 3px;
-	cursor: pointer;
-}
-
-.bar:hover {
-	background-color: #fff;
-	transition: .4s;
-}
-
-input {
-	display: none;
-}
-
-.slides {
-	display: flex;
-	width: 500%;
-	height: 100%;
-}
-
-.slide {
-	width: 25%;
-	transition: .6s;
-}
-
-.slide img {
-	height: 675px;
-	width: 1200px;
-}
-
-#slide1:checked ~ .s1 {
-	margin-left: 0;
-}
-
-#slide2:checked ~ .s1 {
-	margin-left: -25%;
-}
-
-#slide3:checked ~ .s1 {
-	margin-left: -50%;
-}
-
-#slide4:checked ~ .s1 {
-	margin-left: -75%;
-}
-
-.clicks img {
-    display: inline-block;
-}
-
-.search-box input {
-	position: absolute;
-	top: 25px;
-	right: 540px;
-
-	background-color: #fff;
-	height: 32px;
-	padding: 20px;
-	border-radius: 20px;
-
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-.search-box:hover > .search-text {
-	width: 200px;
-}
-
-.search-box img {
-	position: absolute;
-	top: 34px;
-	right: 550px;
-}
-
-.search-text {
-	background: none;
-	border: 0;
-	outline: 0;
-	font-size: 16px;
-	border-radius: 50%;
-
-	transition: 0.4s;
-
-	padding: 0;
-	width: 0;
-}
-
-.search-btn {
-	width: 50px;
-	height: 50px;
-	padding-left: 20px;
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-}
-
-.loupe-white {
-	display: none;
-}
-
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-top: 45px;
-	padding-left: 14%;
-	padding-right: 4%;
-    padding-top: 2%;
-}
-
-nav ul li {
-	list-style-type: none;
-	display: inline-block;
-	padding: 1% 14px 14px 4px;
-}
-
-nav ul li a {
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	text-transform: capitalize;
-}
-
-nav ul li a:hover {
-	color: #FDD614;
-	transition: .4s;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
 }
 
 .logo {
-	color: #fff;
-	font-size: 24px;
-	letter-spacing: 1px;
-	cursor: pointer;
-}
-
-span {
-	color: #FDD614;
-}
-
-.texto-inicial {
-	padding-top: 19%;
-}
-
-.texto-inicial h2 {
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     font-weight: 700;
-    color: #111111; 
-	-webkit-text-stroke-color: #fff;
-	-webkit-text-stroke-width: 1px;
-    padding-top: 104px;
-}
-
-.texto-inicial p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1000px;
-    margin: auto 200px; 
-    padding: 54px 0 100px 0;
-}
-  
-.boxes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 700px; 
-    background-color: #111111;  
-    color: #fff;   
-    margin: auto 400px; 
-}
-
-.imagem img {
-    max-width: 100%;
-}
-
-.sinopse {
-    font-size: 14px;
-    padding-bottom: 14px;
-}
-
-.filme {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.filme h3 {
     color: #fff;
-    font-weight: 700;
-	font-size: 1.8rem;
-    padding-top: 14px;
-	padding-left: 14px;
-    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
 }
 
-.filme h5 {
-    padding-right: 14px;
+.logo span {
+    color: #fdd614;
 }
 
-.button {
-	color: #FDD614;
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 1rem;
-	padding: 1rem 2rem;
-	margin-top: 1rem;
-	display: inline-block;
-	text-align: center;
-	text-transform: uppercase;
+.logo img {
+    width: 30px;
+    margin-left: 10px;
 }
 
-.redes_sociais {
-	background-color: #111111; 
-  	color: #fff;
-  	padding: 0.5em;
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-between;
-  	align-items: baseline;
+.nav-links {
+    display: flex;
+    list-style: none;
 }
 
-.icones {
-	padding: 0 1rem;
-	list-style: none;
+.nav-links li {
+    margin: 0 15px;
 }
 
-.icones li {
-	display: inline-block;
-	padding-right: 1rem;
-}
-
-.icones a {
+.nav-links a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-.amarelo {
-    color: #FDD614;
+.nav-links a:hover {
+    color: #fdd614;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.search-text {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    width: 200px;
+    font-size: 1rem;
+    transition: width 0.3s;
+}
+
+.search-text:focus {
+    outline: none;
+    width: 250px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-btn img {
+    width: 20px;
+}
+
+/* Hero Section (Slider) */
+.hero {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+    width: 25%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.bar {
+    width: 50px;
+    height: 8px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bar:hover {
+    background: #fdd614;
+}
+
+#slide1:checked ~ .slides { transform: translateX(0); }
+#slide2:checked ~ .slides { transform: translateX(-25%); }
+#slide3:checked ~ .slides { transform: translateX(-50%); }
+#slide4:checked ~ .slides { transform: translateX(-75%); }
+
+/* Tarantino Special Section */
+.tarantino-special {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.tarantino-special h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tarantino-special h2 img {
+    width: 30px;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Movie List */
+.movie-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movie {
+    background: #111;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.movie-header .duration {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.movie-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.movie-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-content p {
+    flex: 1;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.movie-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating i {
+    color: #fdd614;
+    margin-right: 5px;
+}
+
+.rating .far {
+    color: #ccc;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fdd614;
+}
+
+.btn {
+    background: #fdd614;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e6c012;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-text {
+        width: 150px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .movie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tarantino-special h2 {
+        font-size: 1.8rem;
+    }
+
+    .movie-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
 }
