@@ -199,3 +199,238 @@ input[type="radio"] {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
+}
+
+.texto-inicial {
+    text-align: center;
+}
+
+.texto-inicial h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.texto-inicial p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.trivia {
+    background: #111;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0 40px;
+    color: #ddd;
+}
+
+.trivia h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.trivia ul {
+    list-style: none;
+}
+
+.trivia li {
+    padding: 8px 0;
+    border-bottom: 1px solid #444;
+}
+
+.trivia li:last-child {
+    border-bottom: none;
+}
+
+.trivia em {
+    color: #fdd614;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movie {
+    background: #111;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.movie-header .duration {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.movie-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.movie-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-content p {
+    flex: 1;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.movie-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating i {
+    color: #fdd614;
+    margin-right: 5px;
+}
+
+.rating .far {
+    color: #ccc;
+}
+
+.user-rating {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fdd614;
+}
+
+.btn {
+    background: #fdd614;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e6c012;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-text {
+        width: 150px;
+    }
+
+    .content {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .slide img {
+        object-fit: contain;
+    }
+
+    .movie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .trivia {
+        margin: 15px 0 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-inicial h2 {
+        font-size: 1.8rem;
+    }
+
+    .star-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    .movie-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+
+    .trivia h3 {
+        font-size: 1.3rem;
+    }
+
+    .trivia li {
+        padding: 6px 0;
+    }
+}
