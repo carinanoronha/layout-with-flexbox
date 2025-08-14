@@ -131,10 +131,14 @@ body {
     object-fit: cover;
 }
 
-#slide1:checked ~ .s1 { margin-left: 0; }
-#slide2:checked ~ .s1 { margin-left: -25%; }
-#slide3:checked ~ .s1 { margin-left: -50%; }
-#slide4:checked ~ .s1 { margin-left: -75%; }
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides .s1 { margin-left: 0; }
+#slide2:checked ~ .slides .s2 { margin-left: -25%; }
+#slide3:checked ~ .slides .s3 { margin-left: -50%; }
+#slide4:checked ~ .slides .s4 { margin-left: -75%; }
 
 .navigation {
     position: absolute;
@@ -159,6 +163,13 @@ body {
     background: #fdd614;
 }
 
+#slide1:checked ~ .navigation .bar[for="slide1"],
+#slide2:checked ~ .navigation .bar[for="slide2"],
+#slide3:checked ~ .navigation .bar[for="slide3"],
+#slide4:checked ~ .navigation .bar[for="slide4"] {
+    background: #fdd614;
+}
+
 /* Tarantino Special */
 .tarantino-special {
     max-width: 1200px;
@@ -180,8 +191,9 @@ body {
     gap: 10px;
 }
 
-.texto-inicial h2 img {
+.star-icon {
     width: 30px;
+    height: 30px;
 }
 
 .texto-inicial p {
@@ -331,6 +343,11 @@ footer {
 @media (max-width: 480px) {
     .texto-inicial h2 {
         font-size: 1.8rem;
+    }
+
+    .star-icon {
+        width: 24px;
+        height: 24px;
     }
 
     .movie-header h3 {
