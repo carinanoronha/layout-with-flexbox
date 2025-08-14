@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore o Especial Tarantino, com os melhores filmes de Quentin Tarantino, incluindo sinopses e avaliações.">
-    <meta name="keywords" content="Quentin Tarantino, filmes, Pulp Fiction, Kill Bill, Inglourious Basterds, cinema">
+    <meta name="description" content="Explore o Especial Tarantino, com os melhores filmes de Quentin Tarantino, incluindo sinopses, avaliações e curiosidades.">
+    <meta name="keywords" content="Quentin Tarantino, filmes, Pulp Fiction, Kill Bill, Inglourious Basterds, Reservoir Dogs, Django Unchained, Once Upon a Time in Hollywood, cinema">
     <meta name="author" content="Carina Noronha">
+    <meta property="og:image" content="images/tarantino1.webp">
+    <meta property="og:title" content="Especial Tarantino - Popcorn Movies">
+    <meta property="og:description" content="Celebre o legado de Quentin Tarantino com seus melhores filmes.">
     <title>Especial Tarantino - Popcorn Movies</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +30,7 @@
             </ul>
         </nav>
         <div class="search-box">
-            <input type="text" class="search-text" placeholder="Pesquisar filmes..." aria-label="Pesquisar filmes">
+            <input type="text" class="search-text" placeholder="Pesquisar filmes..." aria-label="Pesquisar filmes" id="movie-search">
             <button class="search-btn" aria-label="Botão de pesquisa">
                 <img src="images/loupe-black.png" alt="Ícone de pesquisa" width="20" height="20">
             </button>
@@ -41,17 +44,17 @@
         <input type="radio" name="slide" id="slide4">
         <div class="slides">
             <div class="slide-container">
-                <div class="slide"><img src="images/tarantino1.webp" alt="Quentin Tarantino - Slide 1"></div>
-                <div class="slide"><img src="images/tarantino2.jpg" alt="Quentin Tarantino - Slide 2"></div>
-                <div class="slide"><img src="images/tarantino3.jpg" alt="Quentin Tarantino - Slide 3"></div>
-                <div class="slide"><img src="images/tarantino4.jpg" alt="Quentin Tarantino - Slide 4"></div>
+                <div class="slide"><img src="images/tarantino1.webp" alt="Quentin Tarantino dirigindo no set - Slide 1" loading="lazy"></div>
+                <div class="slide"><img src="images/tarantino2.jpg" alt="Quentin Tarantino no set - Slide 2" loading="lazy"></div>
+                <div class="slide"><img src="images/tarantino3.jpg" alt="Quentin Tarantino em evento - Slide 3" loading="lazy"></div>
+                <div class="slide"><img src="images/tarantino4.jpg" alt="Quentin Tarantino com elenco - Slide 4" loading="lazy"></div>
             </div>
         </div>
         <div class="navigation">
-            <label class="bar" for="slide1" aria-label="Slide 1"></label>
-            <label class="bar" for="slide2" aria-label="Slide 2"></label>
-            <label class="bar" for="slide3" aria-label="Slide 3"></label>
-            <label class="bar" for="slide4" aria-label="Slide 4"></label>
+            <label class="bar" for="slide1" aria-label="Slide 1" tabindex="0"></label>
+            <label class="bar" for="slide2" aria-label="Slide 2" tabindex="0"></label>
+            <label class="bar" for="slide3" aria-label="Slide 3" tabindex="0"></label>
+            <label class="bar" for="slide4" aria-label="Slide 4" tabindex="0"></label>
         </div>
     </section>
 
@@ -71,6 +74,15 @@
                 </article>
             </div>
 
+            <aside class="trivia">
+                <h3>Curiosidades sobre Tarantino</h3>
+                <ul>
+                    <li>Tarantino escreveu <em>Pulp Fiction</em> em apenas 3 semanas.</li>
+                    <li>Ele planeja se aposentar após seu 10º filme dirigido.</li>
+                    <li>Atualizado em 14/08/2025: Seu próximo projeto pode ser uma série!</li>
+                </ul>
+            </aside>
+
             <div class="boxes">
                 <article class="movie">
                     <div class="movie-header">
@@ -78,7 +90,7 @@
                         <span class="duration">2h 34min</span>
                     </div>
                     <div class="movie-content">
-                        <img src="images/movie1.jpg" alt="Pôster de Pulp Fiction">
+                        <img src="images/movie1.jpg" alt="Pôster de Pulp Fiction com John Travolta e Samuel L. Jackson" loading="lazy">
                         <p>Vincent Vega (John Travolta) e Jules Winnfield (Samuel L. Jackson) são dois assassinos profissionais que trabalham fazendo cobranças para o gângster Marsellus Wallace (Ving Rhames). Vega enfrenta o desafio de sair com a esposa do chefe, enquanto o pugilista Butch Coolidge (Bruce Willis) se envolve em problemas ao vencer uma luta que deveria perder.</p>
                     </div>
                     <div class="movie-footer">
@@ -89,12 +101,13 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star far"></i>
                         </div>
+                        <div class="user-rating">8.9/10 (500k votos)</div>
                         <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/sharer.php?u=https://layout-with-flexbox.vercel.app/" aria-label="Compartilhar no Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.imdb.com/title/tt0110912/" aria-label="Ver no IMDb" target="_blank" rel="noopener noreferrer"><i class="fab fa-imdb"></i></a>
+                            <a href="https://www.instagram.com/" aria-label="Compartilhar no Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <a href="#" class="btn">Ver Mais</a>
+                        <a href="https://www.imdb.com/title/tt0110912/" class="btn" target="_blank" rel="noopener noreferrer">Ver Mais</a>
                     </div>
                 </article>
                 <hr>
@@ -104,7 +117,7 @@
                         <span class="duration">1h 51min</span>
                     </div>
                     <div class="movie-content">
-                        <img src="images/movie2.jpg" alt="Pôster de Kill Bill: Volume 1">
+                        <img src="images/movie2.jpg" alt="Pôster de Kill Bill: Volume 1 com Uma Thurman" loading="lazy">
                         <p>A Noiva (Uma Thurman), uma ex-assassina, é traída por seu grupo no dia de seu casamento. Após cinco anos em coma, ela desperta com um único objetivo: vingar-se de seus antigos colegas, começando por Vernita Green (Vivica A. Fox) e O-Ren Ishii (Lucy Liu).</p>
                     </div>
                     <div class="movie-footer">
@@ -115,12 +128,13 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star far"></i>
                         </div>
+                        <div class="user-rating">8.1/10 (400k votos)</div>
                         <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/sharer.php?u=https://layout-with-flexbox.vercel.app/" aria-label="Compartilhar no Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.imdb.com/title/tt0266697/" aria-label="Ver no IMDb" target="_blank" rel="noopener noreferrer"><i class="fab fa-imdb"></i></a>
+                            <a href="https://www.instagram.com/" aria-label="Compartilhar no Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <a href="#" class="btn">Ver Mais</a>
+                        <a href="https://www.imdb.com/title/tt0266697/" class="btn" target="_blank" rel="noopener noreferrer">Ver Mais</a>
                     </div>
                 </article>
                 <hr>
@@ -130,7 +144,7 @@
                         <span class="duration">2h 33min</span>
                     </div>
                     <div class="movie-content">
-                        <img src="images/movie3.jpg" alt="Pôster de Inglourious Basterds">
+                        <img src="images/movie3.jpg" alt="Pôster de Inglourious Basterds com Brad Pitt" loading="lazy">
                         <p>Durante a Segunda Guerra Mundial, o tenente Aldo Raine (Brad Pitt) lidera um grupo de soldados judeus em uma missão para matar nazistas. Paralelamente, Shosanna Dreyfuss (Mélanie Laurent) planeja sua vingança contra o coronel Hans Landa (Christoph Waltz) após a execução de sua família.</p>
                     </div>
                     <div class="movie-footer">
@@ -141,12 +155,94 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
+                        <div class="user-rating">8.3/10 (600k votos)</div>
                         <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.facebook.com/sharer.php?u=https://layout-with-flexbox.vercel.app/" aria-label="Compartilhar no Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.imdb.com/title/tt0361748/" aria-label="Ver no IMDb" target="_blank" rel="noopener noreferrer"><i class="fab fa-imdb"></i></a>
+                            <a href="https://www.instagram.com/" aria-label="Compartilhar no Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                         </div>
-                        <a href="#" class="btn">Ver Mais</a>
+                        <a href="https://www.imdb.com/title/tt0361748/" class="btn" target="_blank" rel="noopener noreferrer">Ver Mais</a>
+                    </div>
+                </article>
+                <hr>
+                <article class="movie">
+                    <div class="movie-header">
+                        <h3>Reservoir Dogs</h3>
+                        <span class="duration">1h 39min</span>
+                    </div>
+                    <div class="movie-content">
+                        <img src="images/movie4.jpg" alt="Pôster de Reservoir Dogs com Harvey Keitel" loading="lazy">
+                        <p>Após um assalto a banco fracassado, um grupo de criminosos tenta descobrir quem é o traidor entre eles, enquanto a tensão aumenta em um confronto explosivo.</p>
+                    </div>
+                    <div class="movie-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star far"></i>
+                        </div>
+                        <div class="user-rating">8.3/10 (350k votos)</div>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/sharer.php?u=https://layout-with-flexbox.vercel.app/" aria-label="Compartilhar no Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.imdb.com/title/tt0105236/" aria-label="Ver no IMDb" target="_blank" rel="noopener noreferrer"><i class="fab fa-imdb"></i></a>
+                            <a href="https://www.instagram.com/" aria-label="Compartilhar no Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="https://www.imdb.com/title/tt0105236/" class="btn" target="_blank" rel="noopener noreferrer">Ver Mais</a>
+                    </div>
+                </article>
+                <hr>
+                <article class="movie">
+                    <div class="movie-header">
+                        <h3>Django Unchained</h3>
+                        <span class="duration">2h 45min</span>
+                    </div>
+                    <div class="movie-content">
+                        <img src="images/movie5.jpg" alt="Pôster de Django Unchained com Jamie Foxx" loading="lazy">
+                        <p>Um ex-escravo (Jamie Foxx) se une a um caçador de recompensas (Christoph Waltz) para resgatar sua esposa de um cruel proprietário de plantação no sul dos EUA.</p>
+                    </div>
+                    <div class="movie-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="user-rating">8.4/10 (700k votos)</div>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/sharer.php?u=https://layout-with-flexbox.vercel.app/" aria-label="Compartilhar no Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.imdb.com/title/tt1853728/" aria-label="Ver no IMDb" target="_blank" rel="noopener noreferrer"><i class="fab fa-imdb"></i></a>
+                            <a href="https://www.instagram.com/" aria-label="Compartilhar no Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="https://www.imdb.com/title/tt1853728/" class="btn" target="_blank" rel="noopener noreferrer">Ver Mais</a>
+                    </div>
+                </article>
+                <hr>
+                <article class="movie">
+                    <div class="movie-header">
+                        <h3>Once Upon a Time in Hollywood</h3>
+                        <span class="duration">2h 41min</span>
+                    </div>
+                    <div class="movie-content">
+                        <img src="images/movie6.jpg" alt="Pôster de Once Upon a Time in Hollywood com Leonardo DiCaprio" loading="lazy">
+                        <p>Em 1969, um ator em declínio (Leonardo DiCaprio) e seu dublê (Brad Pitt) navegam pela indústria cinematográfica enquanto eventos reais envolvendo Sharon Tate (Margot Robbie) se desenrolam.</p>
+                    </div>
+                    <div class="movie-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star far"></i>
+                        </div>
+                        <div class="user-rating">7.6/10 (450k votos)</div>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/sharer.php?u=https://layout-with-flexbox.vercel.app/" aria-label="Compartilhar no Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.imdb.com/title/tt7131622/" aria-label="Ver no IMDb" target="_blank" rel="noopener noreferrer"><i class="fab fa-imdb"></i></a>
+                            <a href="https://www.instagram.com/" aria-label="Compartilhar no Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="https://www.imdb.com/title/tt7131622/" class="btn" target="_blank" rel="noopener noreferrer">Ver Mais</a>
                     </div>
                 </article>
             </div>
@@ -156,5 +252,15 @@
     <footer>
         <p>&copy; 2025 Popcorn Movies. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.getElementById('movie-search').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            document.querySelectorAll('.movie').forEach(movie => {
+                const title = movie.querySelector('.movie-header h3').textContent.toLowerCase();
+                movie.style.display = title.includes(searchTerm) ? 'flex' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
