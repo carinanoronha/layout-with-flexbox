@@ -309,6 +309,8 @@ input[type="radio"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .rating i {
@@ -349,6 +351,7 @@ input[type="radio"] {
     font-weight: 600;
     text-transform: uppercase;
     transition: background 0.3s;
+    white-space: nowrap;
 }
 
 .btn:hover {
@@ -406,6 +409,17 @@ footer {
     .trivia {
         margin: 15px 0 30px;
     }
+
+    .movie-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -423,7 +437,8 @@ footer {
     }
 
     .btn {
-        padding: 8px 15px;
+        padding: 6px 12px;
+        font-size: 0.85rem;
     }
 
     .trivia h3 {
