@@ -1,153 +1,360 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore o Especial Tarantino, com os melhores filmes de Quentin Tarantino, incluindo sinopses e avaliações.">
-    <meta name="keywords" content="Quentin Tarantino, filmes, Pulp Fiction, Kill Bill, Inglourious Basterds, cinema">
-    <meta name="author" content="Carina Noronha">
-    <title>Especial Tarantino - Popcorn Movies</title>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <h1 class="logo">Popcorn<span>Movies</span><img src="images/cinema.png" alt="Popcorn Movies Logo"></h1>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Filmes</a></li>
-                <li><a href="#">Séries</a></li>
-                <li><a href="#">Especiais</a></a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
-        <div class="search-box">
-            <input type="text" class="search-text" placeholder="Pesquisar filmes..." aria-label="Pesquisar filmes">
-            <button class="search-btn" aria-label="Botão de pesquisa">
-                <img src="images/loupe-black.png" alt="Ícone de pesquisa" width="20" height="20">
-            </button>
-        </div>
-    </header>
+body {
+    background: #1c2526;
+    color: #fff;
+    line-height: 1.6;
+    font-size: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-    <section class="content">
-        <div class="slides">
-            <input type="radio" name="slide" id="slide1" checked>
-            <input type="radio" name="slide" id="slide2">
-            <input type="radio" name="slide" id="slide3">
-            <input type="radio" name="slide" id="slide4">
-            <div class="slide s1"><img src="images/tarantino1.webp" alt="Quentin Tarantino - Slide 1"></div>
-            <div class="slide s2"><img src="images/tarantino2.jpg" alt="Quentin Tarantino - Slide 2"></div>
-            <div class="slide s3"><img src="images/tarantino3.jpg" alt="Quentin Tarantino - Slide 3"></div>
-            <div class="slide s4"><img src="images/tarantino4.jpg" alt="Quentin Tarantino - Slide 4"></div>
-        </div>
-        <div class="navigation">
-            <label class="bar" for="slide1" aria-label="Slide 1"></label>
-            <label class="bar" for="slide2" aria-label="Slide 2"></label>
-            <label class="bar" for="slide3" aria-label="Slide 3"></label>
-            <label class="bar" for="slide4" aria-label="Slide 4"></label>
-        </div>
-    </section>
+/* Header */
+.header {
+    padding: 20px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    <main>
-        <section class="tarantino-special">
-            <div class="texto-inicial">
-                <h2><img src="images/star.png" alt="Ícone de estrela"> Especial Tarantino</h2>
-                <article>
-                    <p>
-                        Quentin Tarantino é um dos diretores mais icônicos do cinema contemporâneo, reconhecido por sua narrativa não linear, diálogos marcantes e estética visual única. Com uma carreira que abrange 12 filmes, suas obras conquistaram sete Oscars e doze Globos de Ouro, consolidando seu impacto na sétima arte. Para celebrar seu legado, selecionamos os seis melhores longas-metragens dirigidos por Tarantino, destacando suas histórias envolventes e elencos estelares.
-                    </p>
-                </article>
-            </div>
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
 
-            <div class="boxes">
-                <article class="movie">
-                    <div class="movie-header">
-                        <h3>Pulp Fiction</h3>
-                        <span class="duration">2h 34min</span>
-                    </div>
-                    <div class="movie-content">
-                        <img src="images/movie1.jpg" alt="Pôster de Pulp Fiction">
-                        <p>Vincent Vega (John Travolta) e Jules Winnfield (Samuel L. Jackson) são dois assassinos profissionais que trabalham fazendo cobranças para o gângster Marsellus Wallace (Ving Rhames). Vega enfrenta o desafio de sair com a esposa do chefe, enquanto o pugilista Butch Coolidge (Bruce Willis) se envolve em problemas ao vencer uma luta que deveria perder.</p>
-                    </div>
-                    <div class="movie-footer">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star far"></i>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <a href="#" class="btn">Ver Mais</a>
-                    </div>
-                </article>
-                <hr>
-                <article class="movie">
-                    <div class="movie-header">
-                        <h3>Kill Bill: Volume 1</h3>
-                        <span class="duration">1h 51min</span>
-                    </div>
-                    <div class="movie-content">
-                        <img src="images/movie2.jpg" alt="Pôster de Kill Bill: Volume 1">
-                        <p>A Noiva (Uma Thurman), uma ex-assassina, é traída por seu grupo no dia de seu casamento. Após cinco anos em coma, ela desperta com um único objetivo: vingar-se de seus antigos colegas, começando por Vernita Green (Vivica A. Fox) e O-Ren Ishii (Lucy Liu).</p>
-                    </div>
-                    <div class="movie-footer">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star far"></i>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <a href="#" class="btn">Ver Mais</a>
-                    </div>
-                </article>
-                <hr>
-                <article class="movie">
-                    <div class="movie-header">
-                        <h3>Inglourious Basterds</h3>
-                        <span class="duration">2h 33min</span>
-                    </div>
-                    <div class="movie-content">
-                        <img src="images/movie3.jpg" alt="Pôster de Inglourious Basterds">
-                        <p>Durante a Segunda Guerra Mundial, o tenente Aldo Raine (Brad Pitt) lidera um grupo de soldados judeus em uma missão para matar nazistas. Paralelamente, Shosanna Dreyfuss (Mélanie Laurent) planeja sua vingança contra o coronel Hans Landa (Christoph Waltz) após a execução de sua família.</p>
-                    </div>
-                    <div class="movie-footer">
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="social-links">
-                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <a href="#" class="btn">Ver Mais</a>
-                    </div>
-                </article>
-            </div>
-        </section>
-    </main>
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
 
-    <footer>
-        <p>&copy; 2025 Popcorn Movies. Todos os direitos reservados.</p>
-    </footer>
-</body>
-</html>
+.logo span {
+    color: #fdd614;
+}
+
+.logo img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fdd614;
+}
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.search-text {
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px 10px 15px;
+    width: 0;
+    font-size: 1rem;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-box:hover .search-text,
+.search-text:focus {
+    width: 200px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-btn img {
+    width: 20px;
+}
+
+/* Slider */
+.content {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: margin-left 0.6s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .slides .s1 { margin-left: 0; }
+#slide2:checked ~ .slides .s2 { margin-left: -25%; }
+#slide3:checked ~ .slides .s3 { margin-left: -50%; }
+#slide4:checked ~ .slides .s4 { margin-left: -75%; }
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.bar {
+    width: 50px;
+    height: 8px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bar:hover {
+    background: #fdd614;
+}
+
+#slide1:checked ~ .navigation .bar[for="slide1"],
+#slide2:checked ~ .navigation .bar[for="slide2"],
+#slide3:checked ~ .navigation .bar[for="slide3"],
+#slide4:checked ~ .navigation .bar[for="slide4"] {
+    background: #fdd614;
+}
+
+/* Tarantino Special */
+.tarantino-special {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.texto-inicial {
+    text-align: center;
+}
+
+.texto-inicial h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.star-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.texto-inicial p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movie {
+    background: #111;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.movie-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-header h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.movie-header .duration {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.movie-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.movie-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.movie-content p {
+    flex: 1;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.movie-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating i {
+    color: #fdd614;
+    margin-right: 5px;
+}
+
+.rating .far {
+    color: #ccc;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #fdd614;
+}
+
+.btn {
+    background: #fdd614;
+    color: #111;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e6c012;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #444;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-text {
+        width: 150px;
+    }
+
+    .content {
+        height: 300px;
+    }
+
+    .movie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-content img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-inicial h2 {
+        font-size: 1.8rem;
+    }
+
+    .star-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .movie-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 15px;
+    }
+}
