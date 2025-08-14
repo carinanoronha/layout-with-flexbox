@@ -1,209 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore o Especial Tarantino, com os melhores filmes de Quentin Tarantino, incluindo sinopses e avaliações.">
+    <meta name="keywords" content="Quentin Tarantino, filmes, Pulp Fiction, Kill Bill, Inglourious Basterds, cinema">
+    <meta name="author" content="Carina Noronha">
+    <title>Especial Tarantino - Popcorn Movies</title>
 
-	<link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Unidade 3 - Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="clicks">
-        <nav>
-            <ul>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">Popcorn<span>Movies</span><img src="images/cinema.png" alt="Popcorn Movies Logo"></h1>
+            <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Filmes</a></li>
                 <li><a href="#">Séries</a></li>
                 <li><a href="#">Especiais</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-            <h2 class="logo">Popcorn<span>Movies</span><img src="images/cinema.png"></h2>
         </nav>
-    </div> <!-- </clicks -->
+        <div class="search-box">
+            <input type="text" class="search-text" placeholder="Pesquisar filmes..." aria-label="Pesquisar filmes">
+            <button class="search-btn" aria-label="Botão de pesquisa">
+                <img src="images/loupe-black.png" alt="Ícone de pesquisa" width="20" height="20">
+            </button>
+        </div>
+    </header>
 
-    <div class="search-box">
-        <input type="text" class="search-text" placeholder="Pesquisar...">
-        <a class="search-btn">
-            <img class="loupe-black" src="./images/loupe-black.png" alt="" width="20px" height="20px">
-        </a>
-    </div> <!-- </search-box -->
-
-    <div class="content">
-
+    <section class="hero">
         <div class="slides">
             <input type="radio" name="slide" id="slide1" checked>
             <input type="radio" name="slide" id="slide2">
             <input type="radio" name="slide" id="slide3">
             <input type="radio" name="slide" id="slide4">
-
-            <div class="slide s1">
-                <img src="./images/tarantino1.webp" alt="Quentin Tarantino">
-            </div>
-            <div class="slide s2">
-                <img src="./images/tarantino2.jpg" alt="Quentin Tarantino">
-            </div>
-            <div class="slide s3">
-                <img src="./images/tarantino3.jpg" alt="Quentin Tarantino">  
-            </div>
-            <div class="slide s4">
-                <img src="./images/tarantino4.jpg" alt="Quentin Tarantino">
-            </div>
-        </div>  <!-- </slides -->
-
+            <div class="slide s1"><img src="images/tarantino1.webp" alt="Quentin Tarantino - Slide 1"></div>
+            <div class="slide"><img src="images/tarantino2.jpg" alt="Quentin Tarantino - Slide 2"></div>
+            <div class="slide"><img src="images/tarantino3.jpg" alt="Quentin Tarantino - Slide 3"></div>
+            <div class="slide"><img src="images/tarantino4.jpg" alt="Quentin Tarantino - Slide 4"></div>
+        </div>
         <div class="navigation">
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-        </div> <!-- </navigation -->
-
-    </div> <!-- </content -->
-
-<main>
-    <section>
-        <div class="texto-inicial">
-            <h2><img src="images/star.png"><br>Especial Tarantino</h2>
-                <article>
-                    <p>
-                    Quando falamos de diretores de cinema, é impossível não lembrar de Quentin Tarantino. O estadunidense conquistou os amantes da sétima arte com suas produções não lineares, violentas e com diálogos marcantes.
-                    <br><br>
-                    Também não é surpresa para ninguém que todos os filmes de Quentin Tarantino são um sucesso: ao longo de sua carreira, dirigiu 12 filmes, que lhe renderam a vitória de sete Oscars e doze Globos de Ouro. Para homenageá-lo, separamos uma lista com nosso top 6 longas do diretor.
-                    </p>
-                </article>
-        </div> <!-- </texto-inicial -->
-
-        <div class="boxes">
-
-            <div class="filme">
-                <h3>Pulp Fiction</h3>
-                <h5>2 h 34 min</h5>
-            </div> 
-
-            <div id="box1">
-
-                <div class="imagem">
-                    <img src="images/movie1.jpg">
-                </div>
-
-                <div class="sinopse">
-                    <p2>Vincent Vega (John Travolta) e Jules Winnfield (Samuel L. Jackson) são dois assassinos profissionais trabalham fazendo cobranças para Marsellus Wallace (Ving Rhames), um poderosos gângster. Vega é forçado a sair com a garota do chefe, temendo passar dos limites; enquanto isso, o pugilista Butch Coolidge (Bruce Willis) se mete em apuros por ganhar luta que deveria perder.</p2>
-                </div>
-
-                <div class="estrelas">
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star"></i>
-                </div> 
-
-            <div class="underbox">    
-                <div class="redes_sociais">
-                    <ul class="icones">
-                        <li>
-                            <a href="#" class="fab fa-facebook-f"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-imdb"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-instagram"></a>
-                        </li>
-                    </ul>
-                    <a href="#" class="button">Ver Mais</a>
-                </div>
-            </div> <!-- </underbox --> 
-            </div> <!-- </box1 --> 
-            <hr>
-
-            <div id="box2">
-
-                <div class="filme">
-                    <h3>Kill Bill: Volume 1</h3>
-                    <h5>1 h 51 min</h5>
-                </div>
-
-                <div class="imagem">
-                    <img src="images/movie2.jpg">
-                </div>
-
-                <div class="sinopse">
-                    <p2>A Noiva (Uma Thurman) é uma perigosa assassina que trabalhava em um grupo, liderado por Bill (David Carradine), composto principalmente por mulheres. Grávida, ela decide escapar dessa vida de violência e decide se casar, mas no dia da cerimônia seus companheiros de trabalho se voltam contra ela, quase a matando. Após cinco anos em coma, ela desperta sem um bebê e com um único desejo: vingança. A Noiva decide procurar, e matar, as cinco pessoas que destruiram o seu futuro, começando pelas perigosas assassinas Vernita Green (Vivica A. Fox) e O-Ren Ishii (Lucy Liu).</p2>
-                </div>
-
-                <div class="estrelas">
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-            <div class="underbox">        
-                <div class="redes_sociais">
-                    <ul class="icones">
-                        <li>
-                            <a href="#" class="fab fa-facebook-f"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-imdb"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-instagram"></a>
-                        </li>
-                    </ul>
-                    <a href="#" class="button">Ver Mais</a>
-                </div>
-            </div> <!-- </underbox -->    
-            </div> <!-- </box2 --> 
-            <hr>
-
-            <div id="box3">
-
-                <div class="filme">
-                    <h3>Inglourious Basterds</h3>
-                    <h5>2 h 33 min</h5>
-                </div>
-
-                <div class="imagem">
-                    <img src="images/movie3.jpg">
-                </div>
-
-                <div class="sinopse">
-                    <p2>Em Bastardos Inglórios, na Segunda Guerra Mundial, a França está ocupada pelos nazistas. O tenente Aldo Raine (Brad Pitt) é o encarregado de reunir um pelotão de soldados de origem judaica, com o objetivo de realizar uma missão suicida contra os alemães. O objetivo é matar o maior número possível de nazistas, da forma mais cruel possível. Paralelamente Shosanna Dreyfuss (Mélanie Laurent) assiste a execução de sua família pelas mãos do coronel Hans Landa (Christoph Waltz), o que faz com que fuja para Paris. Lá ela se disfarça como operadora e dona de um cinema local, enquanto planeja um meio de se vingar.</p2>
-                </div>
-
-                <div class="estrelas">
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                    <i class="fas fa-star amarelo"></i>
-                </div>
-            <div class="underbox">    
-                <div class="redes_sociais">
-                    <ul class="icones">
-                        <li>
-                            <a href="#" class="fab fa-facebook-f"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-imdb"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="fab fa-instagram"></a>
-                        </li>
-                    </ul>
-                    <a href="#" class="button">Ver Mais</a>
-                </div>
-            </div> <!-- </underbox -->     
-            </div> <!-- </box3 --> 
-        </div> <!-- </boxes --> 
+            <label class="bar" for="slide1" aria-label="Slide 1"></label>
+            <label class="bar" for="slide2" aria-label="Slide 2"></label>
+            <label class="bar" for="slide3" aria-label="Slide 3"></label>
+            <label class="bar" for="slide4" aria-label="Slide 4"></label>
+        </div>
     </section>
 
-</main>
+    <main>
+        <section class="tarantino-special">
+            <h2><img src="images/star.png" alt="Ícone de estrela"> Especial Tarantino</h2>
+            <article class="intro-text">
+                <p>
+                    Quentin Tarantino é um dos diretores mais icônicos do cinema contemporâneo, reconhecido por sua narrativa não linear, diálogos marcantes e estética visual única. Com uma carreira que abrange 12 filmes, suas obras conquistaram sete Oscars e doze Globos de Ouro, consolidando seu impacto na sétima arte. Para celebrar seu legado, selecionamos os seis melhores longas-metragens dirigidos por Tarantino, destacando suas histórias envolventes e elencos estelares.
+                </p>
+            </article>
+
+            <div class="movie-list">
+                <article class="movie">
+                    <div class="movie-header">
+                        <h3>Pulp Fiction</h3>
+                        <span class="duration">2h 34min</span>
+                    </div>
+                    <div class="movie-content">
+                        <img src="images/movie1.jpg" alt="Pôster de Pulp Fiction">
+                        <p>Vincent Vega (John Travolta) e Jules Winnfield (Samuel L. Jackson) são dois assassinos profissionais que trabalham fazendo cobranças para o gângster Marsellus Wallace (Ving Rhames). Vega enfrenta o desafio de sair com a esposa do chefe, enquanto o pugilista Butch Coolidge (Bruce Willis) se envolve em problemas ao vencer uma luta que deveria perder.</p>
+                    </div>
+                    <div class="movie-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star far"></i>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                </article>
+                <hr>
+                <article class="movie">
+                    <div class="movie-header">
+                        <h3>Kill Bill: Volume 1</h3>
+                        <span class="duration">1h 51min</span>
+                    </div>
+                    <div class="movie-content">
+                        <img src="images/movie2.jpg" alt="Pôster de Kill Bill: Volume 1">
+                        <p>A Noiva (Uma Thurman), uma ex-assassina, é traída por seu grupo no dia de seu casamento. Após cinco anos em coma, ela desperta com um único objetivo: vingar-se de seus antigos colegas, começando por Vernita Green (Vivica A. Fox) e O-Ren Ishii (Lucy Liu).</p>
+                    </div>
+                    <div class="movie-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star far"></i>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                </article>
+                <hr>
+                <article class="movie">
+                    <div class="movie-header">
+                        <h3>Inglourious Basterds</h3>
+                        <span class="duration">2h 33min</span>
+                    </div>
+                    <div class="movie-content">
+                        <img src="images/movie3.jpg" alt="Pôster de Inglourious Basterds">
+                        <p>Durante a Segunda Guerra Mundial, o tenente Aldo Raine (Brad Pitt) lidera um grupo de soldados judeus em uma missão para matar nazistas. Paralelamente, Shosanna Dreyfuss (Mélanie Laurent) planeja sua vingança contra o coronel Hans Landa (Christoph Waltz) após a execução de sua família.</p>
+                    </div>
+                    <div class="movie-footer">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="IMDb"><i class="fab fa-imdb"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Popcorn Movies. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
